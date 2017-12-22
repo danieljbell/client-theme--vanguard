@@ -1,0 +1,49 @@
+@import './_application_variables';
+@import '../client/_client_variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $app-gray;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#content_editor {
+  width: 100%;
+  max-width: 816px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.page {
+  background-color: #fff;
+  padding: 20px 30px;
+  position: relative;
+  margin-bottom: 10rem;
+
+  &:before {
+    content: attr(data-title);
+    position: absolute;
+    background-color: $brand;
+    left: 0;
+    right: 0;
+    padding: 0.5em 1rem;
+    top: -2em;
+    color: #fff;
+  }
+
+}
+
+.page-list {
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+}
