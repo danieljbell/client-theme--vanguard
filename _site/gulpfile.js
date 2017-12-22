@@ -17,7 +17,7 @@ gulp.task('css', function () {
     atImport,
     autoprefixer({browsers: ['last 6 versions']}),
     mqpacker,
-    cssnano
+    // cssnano
   ];
   gulp.src('_src/application/*.scss')
     .pipe(sourcemaps.init())
@@ -28,10 +28,10 @@ gulp.task('css', function () {
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream());
   gulp.src('_src/client/**/*.scss')
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
-    .pipe(sourcemaps.write('.'))
+    //.pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./_includes'))
     .pipe(browserSync.stream());  
 });
@@ -39,6 +39,8 @@ gulp.task('css', function () {
 gulp.task('js', function() {
   gulp.src('_src/application/application.js')
     .pipe(gulp.dest('./js'))
+  gulp.src('node_modules/clipboard/dist/clipboard.min.js')
+    .pipe(gulp.dest('./js/libs'))
 });
 
 

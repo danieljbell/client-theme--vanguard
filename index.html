@@ -9,8 +9,8 @@ title: Client Theme
   <title>{{site.title}}</title>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/application.css">
-  <style>
-    {% include client-theme.css %}
+  <style id="client-theme">
+{% include client-theme.css %}
   </style>
 </head>
 <body>
@@ -28,7 +28,7 @@ title: Client Theme
         {% endfor %}
       </ul>
     </nav>
-    <button id="copyCSS">Copy Theme CSS</button>
+    <button id="copyCSS" data-clipboard-target="#client-theme">Copy Theme CSS</button>
   </div>
   <div id="content_editor">
     {% for page in site.pages reversed %}
@@ -37,6 +37,8 @@ title: Client Theme
       </div>
     {% endfor %}
   </div>
+  <script src="/js/libs/clipboard.min.js"></script>
   <script src="/js/application.js"></script>
 </body>
 </html>
+

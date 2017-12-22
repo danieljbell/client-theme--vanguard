@@ -5,9 +5,12 @@
   <title>Client Name</title>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/application.css">
-  <style>
-    h1{color:blue}p{margin-bottom:2rem}
-/*# sourceMappingURL=client-theme.css.map */
+  <style id="client-theme">
+h1 {
+  color: blue; }
+
+p {
+  margin-bottom: 2rem; }
 
   </style>
 </head>
@@ -28,7 +31,7 @@
         
       </ul>
     </nav>
-    <button id="copyCSS">Copy Theme CSS</button>
+    <button id="copyCSS" data-clipboard-target="#client-theme">Copy Theme CSS</button>
   </div>
   <div id="content_editor">
     
@@ -56,6 +59,8 @@
       </div>
     
   </div>
+  <script src="/js/libs/clipboard.min.js"></script>
   <script src="/js/application.js"></script>
 </body>
 </html>
+
