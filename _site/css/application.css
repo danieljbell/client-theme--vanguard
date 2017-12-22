@@ -127,7 +127,7 @@ body {
 .page:before {
     content: attr(data-title);
     position: absolute;
-    background-color: blue;
+    background-color: cornflowerblue;
     left: 0;
     right: 0;
     padding: 0.5em 1rem;
@@ -166,10 +166,15 @@ body {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     font-size: 14px;
     padding: 1em;
-    background-color: #ed4c06;
+    background-color: cornflowerblue;
     border: 0;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out; }
+.page-list #copyCSS:hover {
+      background-color: #185bd3; }
 #navigation {
   position: absolute;
   top: 52px;
@@ -192,18 +197,40 @@ body {
 #navigation a {
     display: block;
     padding: 0.5em 2em;
-    color: blue;
+    color: cornflowerblue;
     text-decoration: none;
     -webkit-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
     border-bottom: 1px solid #ccc; }
 #navigation a:hover {
-      background-color: blue;
+      background-color: cornflowerblue;
       color: #fff; }
 .is-active + #navigation {
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
             transform: translateX(0%); }
+.copyHTML {
+  position: absolute;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  top: -25px;
+  right: 1rem;
+  padding: 0.5em;
+  line-height: 1;
+  font-size: 0.65rem;
+  cursor: pointer;
+  color: cornflowerblue;
+  background-image: none;
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; }
+.copyHTML:hover {
+    background-color: #e6e6e6; }
+@media screen and (max-width: 735px) {
+  .copyHTML {
+    display: none; } }
 
 /*# sourceMappingURL=application.css.map */

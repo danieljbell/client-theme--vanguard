@@ -33,7 +33,10 @@ title: Client Theme
   <div id="content_editor">
     {% for page in site.pages reversed %}
       <div class="page" id="{{page.slug}}" data-title="{{page.title}}">
-        {{page.content}}
+        <button class="copyHTML">Copy Page HTML</button>
+        <div class="page-markup">
+          {{page.content}}
+        </div>
       </div>
     {% endfor %}
   </div>

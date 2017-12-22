@@ -68,10 +68,16 @@ body {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     font-size: 14px;
     padding: 1em;
-    background-color: $app-brand;
+    background-color: $brand;
     border: 0;
     color: #fff;
     cursor: pointer;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: darken($brand, 20%);
+    }
+
   }
 
 }
@@ -117,4 +123,32 @@ body {
     transform: translateX(0%);
   }
 
+}
+
+.copyHTML {
+  position: absolute;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  top: -25px;
+  right: 1rem;
+  padding: 0.5em;
+  line-height: 1;
+  font-size: 0.65rem;
+  cursor: pointer;
+  color: $brand;
+  background-image: none;
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    background-color: darken(#fff, 10%);
+  }
+
+}
+
+@media screen and (max-width: 735px) {
+  .copyHTML {
+    display: none;
+  }
 }

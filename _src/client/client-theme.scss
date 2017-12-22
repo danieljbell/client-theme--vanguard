@@ -1,9 +1,18 @@
 @import './_client_variables';
 
+/*
+=================================================================
+GITHUB REPO: https://github.com/danieljbell/client-theme-template
+=================================================================
+*/
+
+
 h1 {
   color: $brand;
+  display: flex;
 }
 
 p {
   margin-bottom: 2rem;
 }
+
