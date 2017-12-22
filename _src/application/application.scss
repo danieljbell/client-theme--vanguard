@@ -1,5 +1,7 @@
 @import './_application_variables';
 @import '../client/_client_variables';
+@import '../../node_modules/hamburgers/_sass/hamburgers/_base';
+@import '../../node_modules/hamburgers/_sass/hamburgers/types/_squeeze';
 
 * {
   margin: 0;
@@ -17,7 +19,7 @@ body {
   width: 100%;
   max-width: 816px;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 .page {
@@ -40,10 +42,79 @@ body {
 }
 
 .page-list {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(black, 0.5);
+  z-index: 1;
+
+  button {
+    outline: none;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1;
+    .hamburger-box {
+      padding-left: 1em;
+      margin-right: 1em;
+    }
+  }
+
+  #copyCSS {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 1em;
+    background-color: $app-brand;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+  }
+
+}
+
+#navigation {
+  position: absolute;
+  top: 52px;
+  transform: translateX(calc(-100% - 1px));
+  transition: all 150ms ease-in-out;
+  background-color: #fff;
+  font-size: 0.9em;
+  min-width: 250px;
+  max-width: 275px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li:first-child a {
+    border-top: 1px solid #ccc;
+  }
+
+  li:last-child a {
+    border-bottom: 0;
+  }
 
   a {
-    color: #fff;
+    display: block;
+    padding: 0.5em 2em;
+    color: $brand;
     text-decoration: none;
+    transition: all 200ms ease-in-out;
+    border-bottom: 1px solid #ccc;
+
+    &:hover {
+      background-color: $brand;
+      color: #fff;
+    }
+
+  }
+  
+  .is-active + & {
+    transform: translateX(0%);
   }
 
 }

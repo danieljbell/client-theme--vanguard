@@ -19,7 +19,7 @@ gulp.task('css', function () {
     mqpacker,
     cssnano
   ];
-  return gulp.src('_src/application/*.scss')
+  gulp.src('_src/application/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
@@ -27,6 +27,18 @@ gulp.task('css', function () {
     .pipe(gulp.dest('./css'))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream());
+  gulp.src('_src/client/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./_includes'))
+    .pipe(browserSync.stream());  
+});
+
+gulp.task('js', function() {
+  gulp.src('_src/application/application.js')
+    .pipe(gulp.dest('./js'))
 });
 
 
@@ -44,4 +56,4 @@ gulp.task('browser-sync', function() {
 });
 
 
-gulp.task('default', ['css', 'browser-sync', 'watch']);
+gulp.task('default', ['css', 'js', 'browser-sync', 'watch']);
