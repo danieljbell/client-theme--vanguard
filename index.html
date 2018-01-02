@@ -28,12 +28,12 @@ title: Client Theme
         {% endfor %}
       </ul>
     </nav>
-    <button id="copyCSS" data-clipboard-target="#client-theme">Copy Theme CSS</button>
+    <button class="tooltipped tooltipped-w" aria-label="Theme CSS Copied!" id="copyCSS" data-clipboard-target="#client-theme">Copy Theme CSS</button>
   </div>
   <div id="content_editor">
     {% for page in site.pages reversed %}
       <div class="page" id="{{page.slug}}" data-title="{{page.title}}">
-        <button class="copyHTML">Copy Page HTML</button>
+        <button class="copyHTML tooltipped tooltipped-w" aria-label="Page HTML Copied!">Copy Page HTML</button>
         <div class="page-markup">
           {{page.content}}
         </div>

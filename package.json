@@ -31,6 +31,8 @@
     "gulp-uglify": "^3.0.0",
     "hamburgers": "^0.9.1",
     "postcss-import": "^11.0.0",
+    "primer": "^10.2.0",
+    "primer-tooltips": "^1.5.1",
     "pump": "^2.0.0"
   }
 }

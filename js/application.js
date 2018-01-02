@@ -11,7 +11,7 @@ var cssClipboard = new Clipboard('#copyCSS', {
 });
 
 cssClipboard.on('success', function(e) {
-  e.trigger.innerHTML = "Copied!";
+  // e.trigger.innerHTML = "Copied!";
   e.clearSelection();
 });
 
@@ -22,6 +22,6 @@ var htmlClipboard = new Clipboard('.copyHTML', {
 })
 
 htmlClipboard.on('success', function(e) {
-  e.trigger.innerHTML = "Copied!";
+  // e.trigger.innerHTML = "Copied!";
   e.clearSelection();
 });
