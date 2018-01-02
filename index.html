@@ -24,7 +24,7 @@ title: Client Theme
     <nav id="navigation">
       <ul>
         {% for page in site.pages reversed %}
-          <li><a href="#{{page.slug}}">{{page.title}}</a></li>
+          <li><a href="#{{page.slug}}" data-target={{page.slug}}>{{page.title}}</a></li>
         {% endfor %}
       </ul>
     </nav>

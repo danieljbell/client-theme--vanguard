@@ -11,7 +11,6 @@ var cssClipboard = new Clipboard('#copyCSS', {
 });
 
 cssClipboard.on('success', function(e) {
-  // e.trigger.innerHTML = "Copied!";
   e.clearSelection();
 });
 
@@ -22,6 +21,26 @@ var htmlClipboard = new Clipboard('.copyHTML', {
 })
 
 htmlClipboard.on('success', function(e) {
-  // e.trigger.innerHTML = "Copied!";
   e.clearSelection();
 });
+
+
+var allNavLinks = document.querySelectorAll('#navigation a');
+for (var i = 0; i < allNavLinks.length; i++) {
+  allNavLinks[i].addEventListener('click', function(e) {
+    var elem = document.querySelector('#' + this.dataset.target);
+    scrollIt(elem, e);
+  });
+}
+
+function scrollIt(element, event) {
+  event.preventDefault();
+
+  var siteHeader = document.querySelector('.page-list');
+
+  window.scrollTo({
+    'behavior': 'smooth',
+    'left': 0,
+    'top': (element.offsetTop - (siteHeader.offsetHeight * 2))
+  });
+}

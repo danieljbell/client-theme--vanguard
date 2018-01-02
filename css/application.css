@@ -270,7 +270,8 @@ body {
   background-color: #2D3943;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 18px; }
+  font-size: 18px;
+  scroll-behavior: smooth; }
 #content_editor {
   width: 100%;
   max-width: 816px;

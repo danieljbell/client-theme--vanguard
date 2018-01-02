@@ -46,6 +46,7 @@ gulp.task('js', function() {
 
 gulp.task('watch', function() {
   gulp.watch('_src/**/*.scss', ['css']);
+  gulp.watch('_src/**/*.js', ['js']).on('change', reload);
   gulp.watch('**/*.html').on('change', reload);
 });
 
