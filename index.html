@@ -24,7 +24,7 @@ title: Client Theme
     </button>
     <nav id="navigation">
       <ul>
-        {% for page in site.pages reversed %}
+        {% for page in site.pages %}
           <li><a href="#{{page.slug}}" data-target={{page.slug}}>{{page.title}}</a></li>
         {% endfor %}
       </ul>
@@ -32,7 +32,7 @@ title: Client Theme
     <button class="tooltipped tooltipped-w" aria-label="Theme CSS Copied!" id="copyCSS" data-clipboard-target="#client-theme">Copy Theme CSS</button>
   </div>
   <div id="content_editor">
-    {% for page in site.pages reversed %}
+    {% for page in site.pages %}
       <div class="page" id="{{page.slug}}" data-title="{{page.title}}">
         <button class="copyHTML tooltipped tooltipped-w" aria-label="Page HTML Copied!">Copy Page HTML</button>
         <div class="page-markup">

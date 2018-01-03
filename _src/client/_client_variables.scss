@@ -1,28 +1,23 @@
-/*
-==============================
-CLIENT BRAND COLORS
-==============================
-*/
-$brand: #ed4c06;          /* Red-Orange */
-$brand-two: #42b0d8;      /* Blue */
-$brand-three: #33ab40;    /* Green */
+// ==============================
+// CLIENT BRAND COLORS
+// ==============================
+$brand: #ed4c06;          // Red-Orange
+$brand-two: #42b0d8;      // Blue
+$brand-three: #33ab40;    // Green
 
-/*
-==============================
-THEME BUILDER BASIC TYPOGRAPHY
-==============================
-*/
+
+// ==============================
+// THEME BUILDER BASIC TYPOGRAPHY
+// ==============================
 $base-text-color: #000000;
 $base-heading-color: #000000;
 $base-link-color: $brand;
 
-/*
-=================================
-THEME BUILDER ADVANCED TYPOGRAPHY
-=================================
-*/
+// =================================
+// THEME BUILDER ADVANCED TYPOGRAPHY
+// =================================
 
-/* HEADING ONE */
+// HEADING ONE
 $heading-one-text-color: $base-heading-color;
 $heading-one-font-size: 28px;
 $heading-one-line-height: 32px;
@@ -30,7 +25,7 @@ $heading-one-font-weight: 700;
 $heading-one-margin: 0 0 4px 0;
 
 
-/* HEADING TWO */
+// HEADING TWO
 $heading-two-text-color: $base-heading-color;
 $heading-two-font-size: 26px;
 $heading-two-line-height: 30px;
@@ -38,7 +33,7 @@ $heading-two-font-weight: 700;
 $heading-two-margin: 0 0 4px 0;
 
 
-/* HEADING THREE */
+// HEADING THREE
 $heading-three-text-color: $brand;
 $heading-three-font-size: 24px;
 $heading-three-line-height: 26px;
@@ -46,7 +41,7 @@ $heading-three-font-weight: 700;
 $heading-three-margin: 0 0 4px 0;
 
 
-/* HEADING FOUR */
+// HEADING FOUR
 $heading-four-text-color: $base-heading-color;
 $heading-four-font-size: 20px;
 $heading-four-line-height: 22px;
@@ -54,7 +49,7 @@ $heading-four-font-weight: 700;
 $heading-four-margin: 0 0 4px 0;
 
 
-/* HEADING FIVE */
+// HEADING FIVE
 $heading-five-text-color: $base-heading-color;
 $heading-five-font-size: 16px;
 $heading-five-line-height: 18px;
@@ -62,7 +57,7 @@ $heading-five-font-weight: 700;
 $heading-five-margin: 0 0 4px 0;
 
 
-/* HEADING SIX */
+// HEADING SIX
 $heading-six-text-color: $base-heading-color;
 $heading-six-font-size: 16px;
 $heading-six-line-height: 18px;
@@ -70,7 +65,7 @@ $heading-six-font-weight: 700;
 $heading-six-margin: 0 0 4px 0;
 
 
-/* PARAGRAPH */
+// PARAGRAPH
 $paragraph-text-color: $base-text-color;
 $paragraph-font-size: 16px;
 $paragraph-line-height: 24px;
@@ -78,5 +73,5 @@ $paragraph-font-weight: 300;
 $paragraph-margin: 0 0 10px 0;
 
 
-/* LINK */
+// LINK
 $link-text-color: $base-link-color;

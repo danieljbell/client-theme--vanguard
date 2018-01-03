@@ -28,7 +28,7 @@ gulp.task('css', function () {
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream());
   gulp.src(['_src/client/_client_variables.scss', '_src/client/client-theme.scss'])
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulp.dest('./_includes'))
     .pipe(browserSync.stream());  
