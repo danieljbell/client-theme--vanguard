@@ -1,1 +1,0 @@
-{"version":3,"sources":["client-theme.scss","_client_variables.scss"],"names":[],"mappings":"AAEA;EACE,YCHU,EDIX;;AAED;EACE,oBAAmB,EACpB","file":"client-theme.css","sourcesContent":["@import './_client_variables';\n\nh1 {\n  color: $brand;\n}\n\np {\n  margin-bottom: 2rem;\n}","$brand: blue;"]}

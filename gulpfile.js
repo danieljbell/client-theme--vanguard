@@ -27,13 +27,17 @@ gulp.task('css', function () {
     .pipe(gulp.dest('./css'))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.stream());
-  gulp.src('_src/client/**/*.scss')
-    //.pipe(sourcemaps.init())
+  gulp.src(['_src/client/_client_variables.scss', '_src/client/client-theme.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
-    //.pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./_includes'))
     .pipe(browserSync.stream());  
+  gulp.src('_src/client/theme-builder.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(processors))
+    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('_site/css'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('js', function() {

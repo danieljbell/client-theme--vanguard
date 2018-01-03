@@ -3,6 +3,32 @@
 HAMBURGER OPTIONS
 ==============================
 */
+/*
+==============================
+CLIENT BRAND COLORS
+==============================
+*/
+/* Red-Orange */
+/* Blue */
+/* Green */
+/*
+==============================
+THEME BUILDER BASIC TYPOGRAPHY
+==============================
+*/
+/*
+=================================
+THEME BUILDER ADVANCED TYPOGRAPHY
+=================================
+*/
+/* HEADING ONE */
+/* HEADING TWO */
+/* HEADING THREE */
+/* HEADING FOUR */
+/* HEADING FIVE */
+/* HEADING SIX */
+/* PARAGRAPH */
+/* LINK */
 .hamburger {
   padding: 10px 10px;
   display: inline-block;
@@ -285,7 +311,7 @@ body {
 .page:before {
     content: attr(data-title);
     position: absolute;
-    background-color: cornflowerblue;
+    background-color: #ed4c06;
     left: 0;
     right: 0;
     padding: 0.5em 1rem;
@@ -324,7 +350,7 @@ body {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     font-size: 14px;
     padding: 1em;
-    background-color: cornflowerblue;
+    background-color: #ed4c06;
     border: 0;
     color: #fff;
     cursor: pointer;
@@ -332,7 +358,7 @@ body {
     -o-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out; }
 .page-list #copyCSS:hover {
-      background-color: #185bd3; }
+      background-color: #8a2c03; }
 #navigation {
   position: absolute;
   top: 52px;
@@ -355,14 +381,14 @@ body {
 #navigation a {
     display: block;
     padding: 0.5em 2em;
-    color: cornflowerblue;
+    color: #ed4c06;
     text-decoration: none;
     -webkit-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
     border-bottom: 1px solid #ccc; }
 #navigation a:hover {
-      background-color: cornflowerblue;
+      background-color: #ed4c06;
       color: #fff; }
 .is-active + #navigation {
     -webkit-transform: translateX(0%);
@@ -377,7 +403,7 @@ body {
   line-height: 1;
   font-size: 0.65rem;
   cursor: pointer;
-  color: cornflowerblue;
+  color: #ed4c06;
   background-image: none;
   background-color: #fff;
   border: 0;

@@ -1,0 +1,57 @@
+@import './_client_variables';
+
+#content_editor h1 {
+  color: $heading-one-text-color;
+  font-size: $heading-one-font-size;
+  line-height: $heading-one-line-height;
+  font-weight: $heading-one-font-weight;
+  margin: $heading-one-margin;
+}
+
+#content_editor h2 {
+  color: $heading-two-text-color;
+  font-size: $heading-two-font-size;
+  line-height: $heading-two-line-height;
+  font-weight: $heading-two-font-weight;
+  margin: $heading-two-margin;
+}
+
+#content_editor h3 {
+  color: $heading-three-text-color;
+  font-size: $heading-three-font-size;
+  line-height: $heading-three-line-height;
+  font-weight: $heading-three-font-weight;
+  margin: $heading-three-margin;
+}
+
+#content_editor h4 {
+  color: $heading-four-text-color;
+  font-size: $heading-four-font-size;
+  line-height: $heading-four-line-height;
+  font-weight: $heading-four-font-weight;
+  margin: $heading-four-margin;
+}
+
+#content_editor h5 {
+  color: $heading-five-text-color;
+  font-size: $heading-five-font-size;
+  line-height: $heading-five-line-height;
+  font-weight: $heading-five-font-weight;
+  margin: $heading-five-margin;
+}
+
+#content_editor h6 {
+  color: $heading-six-text-color;
+  font-size: $heading-six-font-size;
+  line-height: $heading-six-line-height;
+  font-weight: $heading-six-font-weight;
+  margin: $heading-six-margin;
+}
+
+#content_editor p {
+  color: $paragraph-text-color;
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
+  font-weight: $paragraph-font-weight;
+  margin: $paragraph-margin;
+}
