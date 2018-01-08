@@ -2,6 +2,7 @@
 
 #content_editor h1 {
   color: $heading-one-text-color;
+  font-family: $heading-one-font-family;
   font-size: $heading-one-font-size;
   line-height: $heading-one-line-height;
   font-weight: $heading-one-font-weight;
@@ -10,6 +11,7 @@
 
 #content_editor h2 {
   color: $heading-two-text-color;
+  font-family: $heading-two-font-family;
   font-size: $heading-two-font-size;
   line-height: $heading-two-line-height;
   font-weight: $heading-two-font-weight;
@@ -18,6 +20,7 @@
 
 #content_editor h3 {
   color: $heading-three-text-color;
+  font-family: $heading-three-font-family;
   font-size: $heading-three-font-size;
   line-height: $heading-three-line-height;
   font-weight: $heading-three-font-weight;
@@ -26,6 +29,7 @@
 
 #content_editor h4 {
   color: $heading-four-text-color;
+  font-family: $heading-four-font-family;
   font-size: $heading-four-font-size;
   line-height: $heading-four-line-height;
   font-weight: $heading-four-font-weight;
@@ -34,6 +38,7 @@
 
 #content_editor h5 {
   color: $heading-five-text-color;
+  font-family: $heading-five-font-family;
   font-size: $heading-five-font-size;
   line-height: $heading-five-line-height;
   font-weight: $heading-five-font-weight;
@@ -42,6 +47,7 @@
 
 #content_editor h6 {
   color: $heading-six-text-color;
+  font-family: $heading-six-font-family;
   font-size: $heading-six-font-size;
   line-height: $heading-six-line-height;
   font-weight: $heading-six-font-weight;
@@ -50,8 +56,32 @@
 
 #content_editor p {
   color: $paragraph-text-color;
+  font-family: $paragraph-font-family;
   font-size: $paragraph-font-size;
   line-height: $paragraph-line-height;
   font-weight: $paragraph-font-weight;
   margin: $paragraph-margin;
+}
+
+#content_editor a {
+  color: $base-link-color;
+}
+
+#content_editor table {
+  width: 100%;
+  border-spacing: 0;
+  border-style: solid;
+  border-color: $table-border-color;
+  border-width: $table-border-size;
+  background-color: $table-background-color;
+
+  th,
+  td {
+    padding: $table-padding;
+  }
+
+  th {
+    background-color: $table-heading-background;
+    color: $table-heading-font;
+  }
 }

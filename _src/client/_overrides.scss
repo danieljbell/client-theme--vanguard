@@ -1,0 +1,66 @@
+// ===================
+// TYPOGRAPHY
+// ===================
+
+// #content_editor h1,
+// .pdf-page-content h1 {
+//   text-transform: uppercase;
+// }
+
+// #content_editor h2,
+// .pdf-page-content h2 {
+//   text-transform: uppercase;
+//   font-family: $base-font-family;
+// }
+
+// #content_editor blockquote,
+// .pdf-page-content blockquote {
+//   color: $brand-three;
+//   font-size: 1.25em !important;
+//   font-family: $base-font-family;
+// }
+
+// #content_editor ul,
+// .pdf-page-content ul {
+//   padding-left: 1em !important;
+//   li {
+//     margin-bottom: 0.5em !important;
+//   }
+// }
+
+// #content_editor table,
+// .pdf-page-content table {
+//   margin-bottom: 1em;
+// 
+//   th {
+//     text-align: left;
+//   }
+// 
+//   th,
+//   tfoot td {
+//     text-transform: uppercase;
+//     font-weight: 700;
+//   }
+// 
+//   tr:nth-child(2n) {
+//     background-color: #BCBEC0;
+//   }
+// 
+// }
+
+// GRID
+#content_editor .no-gutters .half,
+.pdf-page-content .no-gutters .half,
+#content_editor .no-gutters .two-thirds,
+.pdf-page-content .no-gutters .two-thirds {
+  padding: 0 30px !important;
+  &:nth-child(2n-1) {
+    padding-left: 0 !important;
+  }
+  &:nth-child(2n) {
+    padding-right: 0 !important;
+  }
+  @media screen and (max-width: 568px) {
+    padding: 0 !important;
+  }
+}

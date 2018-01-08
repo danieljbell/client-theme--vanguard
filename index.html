@@ -33,7 +33,7 @@ title: Client Theme
   </div>
   <div id="content_editor">
     {% for page in site.pages %}
-      <div class="page" id="{{page.slug | slice: 3,page.slug.size}}" data-title="{{page.title | slice: 3,page.title.size}}">
+      <div class="page page-{{forloop.index}}" id="{{page.slug | slice: 3,page.slug.size}}" data-title="{{page.title | slice: 3,page.title.size}}">
         <button class="copyHTML tooltipped tooltipped-w" aria-label="Page HTML Copied!">Copy Page HTML</button>
         <div class="page-markup">
           {{page.content}}

@@ -1,0 +1,129 @@
+// ================================================================================================================
+// Every class in this file SHOULD be prefixed with some sort of client name abbreviation.
+// Make sure to update all instances of that name and save this file.
+// If in sublime text, select "client-name" then you can update all to the chosen client name abbrevation.
+// ================================================================================================================
+
+// ===========
+// TYPOGRAPHY
+// ===========
+.client-name-has-text-white {
+  color: #fff !important;
+}
+
+.client-name-has-text-brand-two {
+  color: $brand-two !important;
+}
+
+.client-name-heading-icon {
+  max-width: 35px !important;
+  max-height: 35px !important;
+  margin-right: 0.5em !important;
+}
+
+
+// ========
+// SPACING
+// ========
+.client-name-pad-y {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  &-more {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+.client-name-pad-t {
+  padding-top: 30px !important;
+  &-more {
+    padding-top: 60px !important;
+  }
+}
+
+.client-name-pad-b {
+  padding-bottom: 30px !important;
+  &-more {
+    padding-bottom: 60px !important;
+  }
+}
+
+.client-name-pad-x {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  &-more {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+
+.client-name-pad-l {
+  padding-left: 30px !important;
+  &-more {
+    padding-left: 60px !important;
+  }
+}
+
+.client-name-pad-r {
+  padding-right: 30px !important;
+  &-more {
+    padding-right: 60px !important;
+  }
+}
+
+.client-name-mar-y {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  &-more {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+  }
+}
+
+.client-name-mar-t {
+  margin-top: 30px !important;
+  &-more {
+    margin-top: 60px !important;
+  }
+}
+
+.client-name-mar-b {
+  margin-bottom: 30px !important;
+  &-more {
+    margin-bottom: 60px !important;
+  }
+  &-neg {
+    margin-bottom: -30px !important;
+  }
+}
+
+.client-name-mar-x {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  @media screen and (max-width: 568px) {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  &-more {
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+  }
+}
+
+.client-name-mar-l {
+  margin-left: 30px !important;
+  &-more {
+    margin-left: 60px !important;
+  }
+}
+
+.client-name-mar-r {
+  margin-right: 30px !important;
+  &-more {
+    margin-right: 60px !important;
+  }
+}
+
+.client-name-b-a {
+  border: 1px solid #fff;
+}

@@ -24,6 +24,12 @@ body {
   max-width: 816px;
   margin: 0 auto;
   margin-top: 10rem;
+  img {
+    max-width: 100%;
+  }
+  ul {
+    padding-left: 40px;
+  }
 }
 
 .page {
@@ -35,7 +41,7 @@ body {
   &:before {
     content: attr(data-title);
     position: absolute;
-    background-color: $brand;
+    background-color: $brand-three;
     left: 0;
     right: 0;
     padding: 0.5em 1rem;
@@ -54,7 +60,7 @@ body {
   right: 0;
   background-color: #fff;
   box-shadow: 3px 3px 10px rgba(black, 0.5);
-  z-index: 1;
+  z-index: 100;
 
   button {
     outline: none;
