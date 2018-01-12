@@ -1,5 +1,7 @@
 title: Client Name
 
+exclude: ['./source-file.pdf']
+
 collections:
   pages:
     output: true
