@@ -1,0 +1,1 @@
+{"version":3,"sources":["client-theme.scss"],"names":[],"mappings":"AAEA;;;;EAIE","file":"client-theme.css","sourcesContent":["@import './_client_variables';\n\n/*\n=================================================================\nGITHUB REPO: https://github.com/danieljbell/client-theme-template\n=================================================================\n*/"]}
