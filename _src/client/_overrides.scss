@@ -49,18 +49,18 @@
 // }
 
 // GRID
-#content_editor .no-gutters .half,
-.pdf-page-content .no-gutters .half,
-#content_editor .no-gutters .two-thirds,
-.pdf-page-content .no-gutters .two-thirds {
-  padding: 0 30px !important;
-  &:nth-child(2n-1) {
-    padding-left: 0 !important;
-  }
-  &:nth-child(2n) {
-    padding-right: 0 !important;
-  }
-  @media screen and (max-width: 568px) {
-    padding: 0 !important;
-  }
-}
+// #content_editor .no-gutters .half,
+// .pdf-page-content .no-gutters .half,
+// #content_editor .no-gutters .two-thirds,
+// .pdf-page-content .no-gutters .two-thirds {
+//   padding: 0 30px !important;
+//   &:nth-child(2n-1) {
+//     padding-left: 0 !important;
+//   }
+//   &:nth-child(2n) {
+//     padding-right: 0 !important;
+//   }
+//   @media screen and (max-width: 568px) {
+//     padding: 0 !important;
+//   }
+// }
