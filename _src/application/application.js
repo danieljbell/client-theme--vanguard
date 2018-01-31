@@ -1,7 +1,23 @@
 var menuToggle = document.querySelector('.hamburger');
 
+document.body.addEventListener('keydown', function(e) {
+  if (e.keyCode === 27) {
+    document.body.classList.remove('menu-open');
+    menuToggle.classList.remove('is-active');
+  }
+});
+
+document.body.addEventListener('click', function(e) {
+  if (e.target.classList.contains('hamburger')) {
+    return;
+  }
+  document.body.classList.remove('menu-open');
+  menuToggle.classList.remove('is-active');
+});
+
 menuToggle.addEventListener('click', function() {
   this.classList.toggle('is-active');
+  document.body.classList.toggle('menu-open');
 });
 
 var cssClipboard = new Clipboard('#copyCSS', {

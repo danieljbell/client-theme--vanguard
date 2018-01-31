@@ -17,6 +17,9 @@ body {
   font-weight: 300;
   font-size: 18px;
   scroll-behavior: smooth;
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 #client-theme {
