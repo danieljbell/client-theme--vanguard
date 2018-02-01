@@ -3,35 +3,76 @@
 GITHUB REPO: https://github.com/danieljbell/client-theme-template
 =================================================================
 */
-.client-name-has-text-white { color: #fff !important; }
-.client-name-has-text-brand-two { color: #a20a35 !important; }
-.client-name-heading-icon { max-width: 35px !important; max-height: 35px !important; margin-right: 0.5em !important; }
-.client-name-pad-y { padding-top: 30px !important; padding-bottom: 30px !important; }
-.client-name-pad-y-more { padding-top: 60px !important; padding-bottom: 60px !important; }
-.client-name-pad-t { padding-top: 30px !important; }
-.client-name-pad-t-more { padding-top: 60px !important; }
-.client-name-pad-b { padding-bottom: 30px !important; }
-.client-name-pad-b-more { padding-bottom: 60px !important; }
-.client-name-pad-x { padding-left: 30px !important; padding-right: 30px !important; }
-.client-name-pad-x-more { padding-left: 60px !important; padding-right: 60px !important; }
-.client-name-pad-l { padding-left: 30px !important; }
-.client-name-pad-l-more { padding-left: 60px !important; }
-.client-name-pad-r { padding-right: 30px !important; }
-.client-name-pad-r-more { padding-right: 60px !important; }
-.client-name-mar-y { margin-top: 30px !important; margin-bottom: 30px !important; }
-.client-name-mar-y-more { margin-top: 60px !important; margin-bottom: 60px !important; }
-.client-name-mar-t { margin-top: 30px !important; }
-.client-name-mar-t-more { margin-top: 60px !important; }
-.client-name-mar-b { margin-bottom: 30px !important; }
-.client-name-mar-b-more { margin-bottom: 60px !important; }
-.client-name-mar-b-neg { margin-bottom: -30px !important; }
-.client-name-mar-x { margin-left: 30px !important; margin-right: 30px !important; }
-.client-name-mar-x-more { margin-left: 60px !important; margin-right: 60px !important; }
-.client-name-mar-l { margin-left: 30px !important; }
-.client-name-mar-l-more { margin-left: 60px !important; }
-.client-name-mar-r { margin-right: 30px !important; }
-.client-name-mar-r-more { margin-right: 60px !important; }
-.client-name-b-a { border: 1px solid #fff; }
-@media screen and (max-width: 568px) { .client-name-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
+.vanguard-full-page { position: relative; background-size: cover; background-position: left bottom; }
+.vanguard-full-page--content { position: relative; z-index: 1; padding: 6em 3em; }
+#content_editor .vanguard-stat-list, .pdf-page-content .vanguard-stat-list { list-style-type: none; padding-left: 0; }
+.vanguard-stat--item { display: table; width: 100%; }
+.vanguard-stat--metric-container, .vanguard-stat--content { display: table-cell; vertical-align: top; }
+.vanguard-stat--metric-container { width: 100px; }
+#content_editor .vanguard-stat--metric-container, .pdf-page-content .vanguard-stat--metric-container { color: #a20a35; font-size: 1.5em; line-height: 1; font-weight: bold; }
+#content_editor .vanguard-stat--content p, .pdf-page-content .vanguard-stat--content p { font-size: 0.8em; line-height: 1.3; }
+.vanguard-footnote-list { counter-reset: vanguard-footnote; }
+#content_editor .vanguard-footnote-list, .pdf-page-content .vanguard-footnote-list { list-style-type: none; padding-left: 0.25em; padding-bottom: 1em; }
+.vanguard-footnote--item { counter-increment: vanguard-footnote; }
+#content_editor .vanguard-footnote--item, .pdf-page-content .vanguard-footnote--item { padding-left: 0.5em; font-size: 0.7em; line-height: 1.2; margin-bottom: 0.5em; position: relative; }
+.vanguard-footnote--item:before { content: counter(vanguard-footnote) "."; position: absolute; top: 0; left: -0.5em; }
+#content_editor .vanguard-color-block-list, .pdf-page-content .vanguard-color-block-list { list-style-type: none; padding-left: 0; }
+.vanguard-color-block--item { background-color: #9f958b; border-right: 10px solid #fff; min-height: 7em; }
+.no-gutters .vanguard-color-block--item { padding: 1em !important; }
+.vanguard-color-block--item:first-child { color: #fff; }
+.vanguard-color-block--item:nth-child(2) { color: #fff; background-color: #c2bbb5; }
+.vanguard-color-block--item:nth-child(3) { background-color: #d9d5d1; }
+.vanguard-color-block--item:nth-child(4) { background-color: #e4e2df; }
+.vanguard-color-block--item:nth-child(5) { background-color: #f0eeed; }
+.vanguard-color-block--item:last-child { border-right: 0; }
+.vanguard-headline-container { display: table; }
+.vanguard-headline-container h2, .vanguard-headline-container img { display: table-cell; }
+.vanguard-headline-container img { margin-right: 1em; }
+#content_editor .vanguard-headline-container img, .pdf-page-content .vanguard-headline-container img { max-width: 125px; }
+.vanguard-border-box { border: 1px solid #bbb0a3; padding: 1em; }
+#content_editor .vanguard-border-box p, .pdf-page-content .vanguard-border-box p, #content_editor .vanguard-border-box ul, .pdf-page-content .vanguard-border-box ul, #content_editor .vanguard-border-box li, .pdf-page-content .vanguard-border-box li { color: #a20a35; }
+#content_editor .vanguard-cover-page .vanguard-cover-page--company-logo, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--company-logo { max-width: 250px; margin-top: 1em; margin-bottom: 1em; }
+.vanguard-cover-page .vanguard-cover-page--bg-container { position: relative; }
+.vanguard-cover-page .vanguard-cover-page--content { position: absolute; left: 2em; right: 2em; bottom: 2em; }
+#content_editor .vanguard-cover-page .vanguard-cover-page--content h1, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content h1 { font-size: 3em; margin-bottom: 0.5em; }
+#content_editor .vanguard-cover-page .vanguard-cover-page--content p, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content p { color: #a20a35; max-width: 60%; font-size: 1.5em; line-height: 1.1; margin-bottom: 0em; }
+.vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 25em; }
+#content_editor .vanguard-retirement-plan-challenges .vanguard-footnote-list, .pdf-page-content .vanguard-retirement-plan-challenges .vanguard-footnote-list { padding-left: 0; width: 90%; margin: 0 auto; }
+.vanguard-plan-overview--image { display: block; margin: 0 auto; max-width: 65% !important; }
+#content_editor sup, .pdf-page-content sup { font-size: 0.6em; line-height: 1; }
+#content_editor ul, .pdf-page-content ul { padding-left: 1em; font-family: Helvetica, Arial; font-size: 16px; line-height: 24px; color: #58595b; margin-bottom: 1.5em; }
+.vanguard-has-text-white { color: #fff !important; }
+.vanguard-has-text-brand { color: #a20a35 !important; }
+.vanguard-has-text-brand-two { color: #9f958b !important; }
+.vanguard-pad-y { padding-top: 30px !important; padding-bottom: 30px !important; }
+.vanguard-pad-y-more { padding-top: 60px !important; padding-bottom: 60px !important; }
+.vanguard-pad-t { padding-top: 30px !important; }
+.vanguard-pad-t-more { padding-top: 60px !important; }
+.vanguard-pad-b { padding-bottom: 30px !important; }
+.vanguard-pad-b-more { padding-bottom: 60px !important; }
+.vanguard-pad-x { padding-left: 30px !important; padding-right: 30px !important; }
+.vanguard-pad-x-more { padding-left: 60px !important; padding-right: 60px !important; }
+.vanguard-pad-l { padding-left: 30px !important; }
+.vanguard-pad-l-more { padding-left: 60px !important; }
+.vanguard-pad-r { padding-right: 30px !important; }
+.vanguard-pad-r-more { padding-right: 60px !important; }
+.vanguard-mar-y { margin-top: 30px !important; margin-bottom: 30px !important; }
+.vanguard-mar-y-more { margin-top: 60px !important; margin-bottom: 60px !important; }
+.vanguard-mar-t { margin-top: 30px !important; }
+.vanguard-mar-t-more { margin-top: 60px !important; }
+.vanguard-mar-b { margin-bottom: 30px !important; }
+.vanguard-mar-b-more { margin-bottom: 60px !important; }
+.vanguard-mar-b-neg { margin-bottom: -30px !important; }
+.vanguard-mar-b-none { margin-bottom: 0px !important; }
+.vanguard-mar-x { margin-left: 30px !important; margin-right: 30px !important; }
+.vanguard-mar-x-more { margin-left: 60px !important; margin-right: 60px !important; }
+.vanguard-mar-l { margin-left: 30px !important; }
+.vanguard-mar-l-more { margin-left: 60px !important; }
+.vanguard-mar-r { margin-right: 30px !important; }
+.vanguard-mar-r-more { margin-right: 60px !important; }
+.vanguard-b-a { border: 1px solid #fff; }
+.vanguard-max-image { width: 100%; }
+@media screen and (max-width: 735px) { .vanguard-full-page--content { padding: 1em; } .vanguard-stat--metric-container, .vanguard-stat--content { display: block; } .vanguard-color-block--item { min-height: auto; border-right: 0; border-bottom: 10px solid #fff; } .vanguard-color-block--item:last-child { border-bottom: 0; } .vanguard-cover-page .vanguard-cover-page--content { left: 1.5em; right: 1.5em; bottom: 1.5em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content h1, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content h1 { font-size: 2.25em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content p, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content p { max-width: none; font-size: 1em; } .vanguard-full-page.vanguard-retirement-plan-challenges { background-position: top center; } .vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 0; } .vanguard-plan-overview--image { max-width: 100% !important; } }
+@media screen and (max-width: 568px) { .vanguard-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
 
 /*# sourceMappingURL=client-theme.css.map */

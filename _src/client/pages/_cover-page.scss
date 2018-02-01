@@ -1,0 +1,50 @@
+.vanguard-cover-page .vanguard-cover-page--company-logo {
+  #content_editor &,
+  .pdf-page-content & {
+    max-width: 250px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.vanguard-cover-page .vanguard-cover-page--bg-container {
+  position: relative;
+}
+
+.vanguard-cover-page .vanguard-cover-page--content {
+  position: absolute;
+  left: 2em;
+  right: 2em;
+  bottom: 2em;
+  @include mobile {
+    left: 1.5em;
+    right: 1.5em;
+    bottom: 1.5em;
+  }
+}
+
+.vanguard-cover-page .vanguard-cover-page--content h1 {
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    @include mobile {
+      font-size: 2.25em;
+    }
+  }
+}
+
+.vanguard-cover-page .vanguard-cover-page--content p {
+  #content_editor &,
+  .pdf-page-content & {
+    color: $brand;
+    max-width: 60%;
+    font-size: 1.5em;
+    line-height: 1.1;
+    margin-bottom: 0em;
+    @include mobile {
+      max-width: none;
+      font-size: 1em;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.vanguard-color-block-list {
+  #content_editor &,
+  .pdf-page-content & {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.vanguard-color-block--item {
+  background-color: $brand-two;
+  border-right: 10px solid #fff;
+  min-height: 7em;
+  @include mobile {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 10px solid #fff;
+  }
+  
+  .no-gutters & {
+    padding: 1em !important;
+  }
+  
+  &:first-child {
+    color: #fff;
+  }
+  
+  &:nth-child(2) {
+    color: #fff;
+    background-color: lighten($brand-two, 15%);
+  }
+  
+  &:nth-child(3) {
+    background-color: lighten($brand-two, 25%);
+  }
+  
+  &:nth-child(4) {
+    background-color: lighten($brand-two, 30%);
+  }
+  
+  &:nth-child(5) {
+    background-color: lighten($brand-two, 35%);
+  }
+  
+  &:last-child {
+    border-right: 0;
+    @include mobile {
+      border-bottom: 0;
+    }
+  }
+
+}

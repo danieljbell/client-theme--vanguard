@@ -1,0 +1,40 @@
+.vanguard-stat-list {
+  #content_editor &,
+  .pdf-page-content & {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.vanguard-stat--item {
+  display: table;
+  width: 100%;
+}
+
+.vanguard-stat--metric-container,
+.vanguard-stat--content {
+  display: table-cell;
+  vertical-align: top;
+  @include mobile {
+    display: block;
+  }
+}
+
+.vanguard-stat--metric-container {
+  width: 100px;
+  #content_editor &,
+  .pdf-page-content & {
+    color: $brand;
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: bold;
+  }
+}
+
+.vanguard-stat--content p {
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 0.8em;
+    line-height: 1.3;
+  }
+}

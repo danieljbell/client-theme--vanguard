@@ -1,0 +1,17 @@
+.vanguard-headline-container {
+  display: table;
+
+  h2,
+  img {
+    display: table-cell;
+  }
+
+  img {
+    margin-right: 1em;
+    #content_editor &,
+    .pdf-page-content & {
+      max-width: 125px;
+    }
+  }
+
+}

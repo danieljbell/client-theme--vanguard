@@ -2,17 +2,17 @@
 // CLIENT BRAND COLORS
 // ==============================
 $brand: #a20a35;         // Burgandy
-$brand-two: $brand;      // Red
+$brand-two: #9f958b;     // Brown
 $brand-three: $brand;    // Light Green
 
 
 // ==============================
 // THEME BUILDER BASIC TYPOGRAPHY
 // ==============================
-$base-text-color: #2d3943;
-$base-heading-color: #2d3943;
-$base-link-color: $brand-two;
-$base-font-family: 'Source Sans Pro';
+$base-text-color: #58595b;
+$base-heading-color: $brand;
+$base-link-color: #0065a4;
+$base-font-family: Helvetica, Arial;
 
 // =================================
 // THEME BUILDER ADVANCED TYPOGRAPHY
@@ -21,14 +21,14 @@ $base-font-family: 'Source Sans Pro';
 // HEADING ONE
 $heading-one-text-color: $base-heading-color;
 $heading-one-font-family: $base-font-family;
-$heading-one-font-size: 36px;
-$heading-one-line-height: 40px;
+$heading-one-font-size: 24px;
+$heading-one-line-height: 28px;
 $heading-one-font-weight: 300;
-$heading-one-margin: 0 0 40px 0;
+$heading-one-margin: 0 0 36px 0;
 
 
 // HEADING TWO
-$heading-two-text-color: $brand-three;
+$heading-two-text-color: $base-text-color;
 $heading-two-font-family: $base-font-family;
 $heading-two-font-size: 22px;
 $heading-two-line-height: 26px;
@@ -37,12 +37,12 @@ $heading-two-margin: 0 0 4px 0;
 
 
 // HEADING THREE
-$heading-three-text-color: $brand;
+$heading-three-text-color: $base-text-color;
 $heading-three-font-family: $base-font-family;
-$heading-three-font-size: 24px;
-$heading-three-line-height: 26px;
-$heading-three-font-weight: 700;
-$heading-three-margin: 0 0 4px 0;
+$heading-three-font-size: 20px;
+$heading-three-line-height: 30px;
+$heading-three-font-weight: 300;
+$heading-three-margin: 0 0 24px 0;
 
 
 // HEADING FOUR
@@ -67,15 +67,15 @@ $heading-five-margin: 24px 0 24px 0;
 $heading-six-text-color: $base-heading-color;
 $heading-six-font-family: $base-font-family;
 $heading-six-font-size: 16px;
-$heading-six-line-height: 18px;
-$heading-six-font-weight: 700;
-$heading-six-margin: 0 0 4px 0;
+$heading-six-line-height: 24px;
+$heading-six-font-weight: 400;
+$heading-six-margin: 0 0 16px 0;
 
 
 // PARAGRAPH
 $paragraph-text-color: $base-text-color;
 $paragraph-font-family: $base-font-family;
-$paragraph-font-size: 18px;
+$paragraph-font-size: 16px;
 $paragraph-line-height: 24px;
 $paragraph-font-weight: 300;
 $paragraph-margin: 0 0 20px 0;

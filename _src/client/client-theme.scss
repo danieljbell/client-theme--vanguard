@@ -7,8 +7,16 @@ GITHUB REPO: https://github.com/danieljbell/client-theme-template
 =================================================================
 */
 
+@import './modules/full-pages';
+@import './modules/stat-list';
+@import './modules/footnote-list';
+@import './modules/color-block-list';
+@import './modules/headline-container';
+@import './modules/border-box';
 
-
+@import './pages/cover-page';
+@import './pages/retirement-plan-challenges';
+@import './pages/plan-overview';
 
 @import './_overrides';
 @import './_utilities';

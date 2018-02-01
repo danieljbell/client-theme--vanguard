@@ -1,0 +1,14 @@
+.vanguard-border-box {
+  border: 1px solid #bbb0a3;
+  padding: 1em;
+
+  p,
+  ul,
+  li {
+    #content_editor &,
+    .pdf-page-content & {
+      color: $brand;
+    }
+  }
+
+}

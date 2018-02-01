@@ -1,0 +1,8 @@
+.vanguard-plan-overview--image {
+  display: block;
+  margin: 0 auto;
+  max-width: 65% !important;
+  @include mobile {
+    max-width: 100% !important;
+  }
+}

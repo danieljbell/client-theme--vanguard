@@ -1,0 +1,21 @@
+.vanguard-full-page.vanguard-retirement-plan-challenges {
+  @include mobile {
+    background-position: top center;
+  }
+}
+
+.vanguard-retirement-plan-challenges .vanguard-stat-list {
+  margin-bottom: 25em;
+  @include mobile {
+    margin-bottom: 0;
+  }
+}
+
+.vanguard-retirement-plan-challenges .vanguard-footnote-list {
+  #content_editor &,
+  .pdf-page-content & {
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
