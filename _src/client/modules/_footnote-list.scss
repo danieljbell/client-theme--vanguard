@@ -1,4 +1,25 @@
 .vanguard-footnote-list {
+
+  #content_editor &,
+  .pdf-page-content & {
+    list-style-type: none;
+    padding-left: 0;
+  }  
+
+}
+
+.vanguard-footnote--item {
+  
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 0.7em;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+ol.vanguard-footnote-list {
   counter-reset: vanguard-footnote;
 
   #content_editor &,
@@ -10,18 +31,15 @@
 
 }
 
-.vanguard-footnote--item {
+ol .vanguard-footnote--item {
   counter-increment: vanguard-footnote;
-  
+
   #content_editor &,
   .pdf-page-content & {
     padding-left: 0.5em;
-    font-size: 0.7em;
-    line-height: 1.2;
-    margin-bottom: 0.5em;
     position: relative;
   } 
-
+  
   &:before {
     content: counter(vanguard-footnote) '.';
     position: absolute;

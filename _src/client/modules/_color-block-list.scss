@@ -10,6 +10,7 @@
   background-color: $brand-two;
   border-right: 10px solid #fff;
   min-height: 7em;
+  position: relative;
   @include mobile {
     min-height: auto;
     border-right: 0;

@@ -11,13 +11,15 @@ GITHUB REPO: https://github.com/danieljbell/client-theme-template
 .vanguard-stat--metric-container { width: 100px; }
 #content_editor .vanguard-stat--metric-container, .pdf-page-content .vanguard-stat--metric-container { color: #a20a35; font-size: 1.5em; line-height: 1; font-weight: bold; }
 #content_editor .vanguard-stat--content p, .pdf-page-content .vanguard-stat--content p { font-size: 0.8em; line-height: 1.3; }
-.vanguard-footnote-list { counter-reset: vanguard-footnote; }
-#content_editor .vanguard-footnote-list, .pdf-page-content .vanguard-footnote-list { list-style-type: none; padding-left: 0.25em; padding-bottom: 1em; }
-.vanguard-footnote--item { counter-increment: vanguard-footnote; }
-#content_editor .vanguard-footnote--item, .pdf-page-content .vanguard-footnote--item { padding-left: 0.5em; font-size: 0.7em; line-height: 1.2; margin-bottom: 0.5em; position: relative; }
-.vanguard-footnote--item:before { content: counter(vanguard-footnote) "."; position: absolute; top: 0; left: -0.5em; }
+#content_editor .vanguard-footnote-list, .pdf-page-content .vanguard-footnote-list { list-style-type: none; padding-left: 0; }
+#content_editor .vanguard-footnote--item, .pdf-page-content .vanguard-footnote--item { font-size: 0.7em; line-height: 1.2; margin-bottom: 0.5em; }
+ol.vanguard-footnote-list { counter-reset: vanguard-footnote; }
+#content_editor ol.vanguard-footnote-list, .pdf-page-content ol.vanguard-footnote-list { list-style-type: none; padding-left: 0.25em; padding-bottom: 1em; }
+ol .vanguard-footnote--item { counter-increment: vanguard-footnote; }
+#content_editor ol .vanguard-footnote--item, .pdf-page-content ol .vanguard-footnote--item { padding-left: 0.5em; position: relative; }
+ol .vanguard-footnote--item:before { content: counter(vanguard-footnote) "."; position: absolute; top: 0; left: -0.5em; }
 #content_editor .vanguard-color-block-list, .pdf-page-content .vanguard-color-block-list { list-style-type: none; padding-left: 0; }
-.vanguard-color-block--item { background-color: #9f958b; border-right: 10px solid #fff; min-height: 7em; }
+.vanguard-color-block--item { background-color: #9f958b; border-right: 10px solid #fff; min-height: 7em; position: relative; }
 .no-gutters .vanguard-color-block--item { padding: 1em !important; }
 .vanguard-color-block--item:first-child { color: #fff; }
 .vanguard-color-block--item:nth-child(2) { color: #fff; background-color: #c2bbb5; }
@@ -39,11 +41,20 @@ GITHUB REPO: https://github.com/danieljbell/client-theme-template
 .vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 25em; }
 #content_editor .vanguard-retirement-plan-challenges .vanguard-footnote-list, .pdf-page-content .vanguard-retirement-plan-challenges .vanguard-footnote-list { padding-left: 0; width: 90%; margin: 0 auto; }
 .vanguard-plan-overview--image { display: block; margin: 0 auto; max-width: 65% !important; }
+.vanguard-plan--partcipant .unit.half:first-child { padding-right: 2em !important; }
+.vanguard-plan--partcipant .unit.half:last-child { margin-top: -1.25em; padding-left: 2em !important; }
+.vanguard-plan--partcipant .unit.half img { border: 1px solid #ccc; -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); margin-bottom: 1em; }
+.vanguard-plan--pricing .vanguard-color-block--item { font-size: 0.8em; min-height: 8em; line-height: 1.2; border-right-width: 40px; }
+.vanguard-plan--pricing .vanguard-color-block--item:after { position: absolute; top: 50%; left: calc(100% + 7px); font-size: 2em; font-weight: bold; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); color: #c2bbb5 !important; }
+.vanguard-plan--pricing .vanguard-color-block--item:first-child:after, .vanguard-plan--pricing .vanguard-color-block--item:nth-child(2):after { content: '\2014'; }
+.vanguard-plan--pricing .vanguard-color-block--item:nth-child(3):after { content: '\002B'; left: calc(100% + 12px); }
+.vanguard-plan--pricing .vanguard-color-block--item:nth-child(4):after { content: '\003D'; left: calc(100% + 12px); }
 #content_editor sup, .pdf-page-content sup { font-size: 0.6em; line-height: 1; }
 #content_editor ul, .pdf-page-content ul { padding-left: 1em; font-family: Helvetica, Arial; font-size: 16px; line-height: 24px; color: #58595b; margin-bottom: 1.5em; }
 .vanguard-has-text-white { color: #fff !important; }
 .vanguard-has-text-brand { color: #a20a35 !important; }
 .vanguard-has-text-brand-two { color: #9f958b !important; }
+#content_editor .vanguard-font-bump, .pdf-page-content .vanguard-font-bump { font-size: 1.25em !important; line-height: 1.4 !important; }
 .vanguard-pad-y { padding-top: 30px !important; padding-bottom: 30px !important; }
 .vanguard-pad-y-more { padding-top: 60px !important; padding-bottom: 60px !important; }
 .vanguard-pad-t { padding-top: 30px !important; }
@@ -72,7 +83,8 @@ GITHUB REPO: https://github.com/danieljbell/client-theme-template
 .vanguard-mar-r-more { margin-right: 60px !important; }
 .vanguard-b-a { border: 1px solid #fff; }
 .vanguard-max-image { width: 100%; }
-@media screen and (max-width: 735px) { .vanguard-full-page--content { padding: 1em; } .vanguard-stat--metric-container, .vanguard-stat--content { display: block; } .vanguard-color-block--item { min-height: auto; border-right: 0; border-bottom: 10px solid #fff; } .vanguard-color-block--item:last-child { border-bottom: 0; } .vanguard-cover-page .vanguard-cover-page--content { left: 1.5em; right: 1.5em; bottom: 1.5em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content h1, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content h1 { font-size: 2.25em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content p, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content p { max-width: none; font-size: 1em; } .vanguard-full-page.vanguard-retirement-plan-challenges { background-position: top center; } .vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 0; } .vanguard-plan-overview--image { max-width: 100% !important; } }
+#content_editor .vanguard-custom-chart-title, .pdf-page-content .vanguard-custom-chart-title { margin-left: 8em; }
+@media screen and (max-width: 735px) { .vanguard-full-page--content { padding: 1em; } .vanguard-stat--metric-container, .vanguard-stat--content { display: block; } .vanguard-color-block--item { min-height: auto; border-right: 0; border-bottom: 10px solid #fff; } .vanguard-color-block--item:last-child { border-bottom: 0; } .vanguard-headline-container { width: 100%; } .vanguard-headline-container h2, .vanguard-headline-container img { display: block; } .vanguard-headline-container img { margin-left: auto; margin-right: auto; margin-bottom: 1em; } .vanguard-cover-page .vanguard-cover-page--content { left: 1.5em; right: 1.5em; bottom: 1.5em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content h1, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content h1 { font-size: 2.25em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content p, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content p { max-width: none; font-size: 1em; } .vanguard-full-page.vanguard-retirement-plan-challenges { background-position: top center; } .vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 0; } .vanguard-plan-overview--image { max-width: 100% !important; } .vanguard-plan--partcipant .unit.half:first-child { padding-right: 0 !important; margin-bottom: 2em; } .vanguard-plan--partcipant .unit.half:last-child { margin-top: 0; padding-left: 0 !important; } .vanguard-plan--pricing .vanguard-color-block--item { border-right-width: 0; margin-bottom: 2em; } .vanguard-plan--pricing .vanguard-color-block--item:after { position: absolute; top: calc(100% + 0.1em); left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } .vanguard-plan--pricing .vanguard-color-block--item:nth-child(3):after { left: 50%; } .vanguard-plan--pricing .vanguard-color-block--item:nth-child(4):after { left: 50%; } #content_editor .vanguard-custom-chart-title, .pdf-page-content .vanguard-custom-chart-title { margin-left: 0; } }
 @media screen and (max-width: 568px) { .vanguard-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
 
 /*# sourceMappingURL=client-theme.css.map */

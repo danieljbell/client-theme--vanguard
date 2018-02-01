@@ -1,0 +1,54 @@
+.vanguard-plan--pricing .vanguard-color-block--item {
+  font-size: 0.8em;
+  min-height: 8em;
+  line-height: 1.2;
+  border-right-width: 40px;
+  @include mobile {
+    border-right-width: 0;
+    margin-bottom: 2em;
+  }
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 7px);
+    font-size: 2em;
+    font-weight: bold;
+    transform: translateY(-50%);
+    color: lighten($brand-two, 15%) !important;       
+    @include mobile {
+      position: absolute;
+      top: calc(100% + 0.1em);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  &:first-child,
+  &:nth-child(2) {
+    &:after {
+      content: '\2014';
+    }
+  }
+
+  &:nth-child(3) {
+    &:after {
+      content: '\002B';
+      left: calc(100% + 12px);
+      @include mobile {
+        left: 50%;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    &:after {
+      content: '\003D';
+      left: calc(100% + 12px);
+      @include mobile {
+        left: 50%;
+      }
+    }
+  }
+
+}

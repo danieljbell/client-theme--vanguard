@@ -1,0 +1,26 @@
+.vanguard-plan--partcipant .unit.half {
+  
+  &:first-child {
+    padding-right: 2em !important;
+    @include mobile {
+      padding-right: 0 !important;
+      margin-bottom: 2em;
+    }
+  }
+ 
+  &:last-child {
+    margin-top: -1.25em;
+    padding-left: 2em !important;
+    @include mobile {
+      margin-top: 0;
+      padding-left: 0 !important;
+    }
+  }
+
+  img {
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+  }
+
+}
