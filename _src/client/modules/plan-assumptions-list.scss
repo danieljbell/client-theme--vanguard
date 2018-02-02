@@ -1,0 +1,19 @@
+.vanguard-plan-assumptions-list {
+  #content_editor &,
+  .pdf-page-content & {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.vanguard-plan-assumptions--item {
+  #content_editor &,
+  .pdf-page-content & {
+    font-size: 0.8em;
+    line-height: 1.1;
+    margin-bottom: 0.25em;
+    @include print {
+      font-size: 0.7em;
+    }
+  }
+}

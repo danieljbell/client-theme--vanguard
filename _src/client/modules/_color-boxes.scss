@@ -1,0 +1,22 @@
+@mixin vanguard-color-box($background-color,$text-color: #fff) {
+  color: $text-color;
+  background-color: $background-color;
+  padding: 0.75em;
+  p {
+    #content_editor &,
+    .pdf-page-content & {
+      color: $text-color;
+      margin-bottom: 0;
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+}
+
+.vanguard-brand-two-box {
+  @include vanguard-color-box($brand-two);
+}
+
+.vanguard-gray-box {
+  @include vanguard-color-box(#a7a8a6);
+}

@@ -1,6 +1,16 @@
+@page retirement-plan-challenges {
+  margin-left: 0.25in;
+  margin-right: 0.25in;
+}
+
 .vanguard-full-page.vanguard-retirement-plan-challenges {
+  page: retirement-plan-challenges;
+  background-image: linear-gradient(rgba(225,228,230,0), rgba(225,228,230,0.8)), url(https://mytinder.s3.amazonaws.com/assets/medias/595491_original.jpg?1517581239);
   @include mobile {
     background-position: top center;
+  }
+  @include print {
+    background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/595491_original.jpg?1517581239);
   }
 }
 
@@ -8,6 +18,9 @@
   margin-bottom: 25em;
   @include mobile {
     margin-bottom: 0;
+  }
+  @include print {
+    margin-bottom: 13em;
   }
 }
 

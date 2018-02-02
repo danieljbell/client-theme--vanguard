@@ -1,0 +1,18 @@
+@page plan-assumptions {
+  size: A4 landscape;
+  margin: 0.5in !important;
+}
+
+.vanguard-plan-assumptions {
+  page: plan-assumptions;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.vanguard-plan-assumptions .vanguard-cover-page--company-logo {
+  max-width: 200px !important;
+  float: right;
+}

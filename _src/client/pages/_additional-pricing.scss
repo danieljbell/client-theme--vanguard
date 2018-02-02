@@ -1,0 +1,17 @@
+@page additional-pricing {
+  margin-left: 0.25in;
+  margin-right: 0.25in;
+  margin-bottom: 0.25in;
+  margin-bottom: -0.5in;
+}
+
+.vanguard-additional-pricing {
+  page: additional-pricing;
+
+  h1 {
+    #content_editor &,
+    .pdf-page-content & {
+      margin-bottom: 0.5em !important;
+    }
+  }
+} 

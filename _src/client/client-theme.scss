@@ -2,9 +2,9 @@
 @import './_mixins';
 
 /*
-=================================================================
-GITHUB REPO: https://github.com/danieljbell/client-theme-template
-=================================================================
+==================================================================
+GITHUB REPO: https://github.com/danieljbell/client-theme--vanguard
+==================================================================
 */
 
 @import './modules/full-pages';
@@ -13,12 +13,18 @@ GITHUB REPO: https://github.com/danieljbell/client-theme-template
 @import './modules/color-block-list';
 @import './modules/headline-container';
 @import './modules/border-box';
+@import './modules/color-boxes';
+@import './modules/tables';
+@import './modules/plan-assumptions-list';
 
 @import './pages/cover-page';
 @import './pages/retirement-plan-challenges';
 @import './pages/plan-overview';
 @import './pages/vanguard-plan--participant';
 @import './pages/vanguard-plan--pricing';
+@import './pages/plan-assumptions';
+@import './pages/additional-pricing';
+@import './pages/legal-notes';
 
 @import './_overrides';
 @import './_utilities';

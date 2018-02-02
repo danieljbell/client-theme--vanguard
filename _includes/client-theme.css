@@ -1,7 +1,7 @@
 /*
-=================================================================
-GITHUB REPO: https://github.com/danieljbell/client-theme-template
-=================================================================
+==================================================================
+GITHUB REPO: https://github.com/danieljbell/client-theme--vanguard
+==================================================================
 */
 .vanguard-full-page { position: relative; background-size: cover; background-position: left bottom; }
 .vanguard-full-page--content { position: relative; z-index: 1; padding: 6em 3em; }
@@ -20,7 +20,7 @@ ol .vanguard-footnote--item { counter-increment: vanguard-footnote; }
 ol .vanguard-footnote--item:before { content: counter(vanguard-footnote) "."; position: absolute; top: 0; left: -0.5em; }
 #content_editor .vanguard-color-block-list, .pdf-page-content .vanguard-color-block-list { list-style-type: none; padding-left: 0; }
 .vanguard-color-block--item { background-color: #9f958b; border-right: 10px solid #fff; min-height: 7em; position: relative; }
-.no-gutters .vanguard-color-block--item { padding: 1em !important; }
+.no-gutters .vanguard-color-block--item.unit { padding: 1em !important; }
 .vanguard-color-block--item:first-child { color: #fff; }
 .vanguard-color-block--item:nth-child(2) { color: #fff; background-color: #c2bbb5; }
 .vanguard-color-block--item:nth-child(3) { background-color: #d9d5d1; }
@@ -30,14 +30,52 @@ ol .vanguard-footnote--item:before { content: counter(vanguard-footnote) "."; po
 .vanguard-headline-container { display: table; }
 .vanguard-headline-container h2, .vanguard-headline-container img { display: table-cell; }
 .vanguard-headline-container img { margin-right: 1em; }
-#content_editor .vanguard-headline-container img, .pdf-page-content .vanguard-headline-container img { max-width: 125px; }
+#content_editor .vanguard-headline-container img, .pdf-page-content .vanguard-headline-container img { max-width: 125px !important; }
 .vanguard-border-box { border: 1px solid #bbb0a3; padding: 1em; }
 #content_editor .vanguard-border-box p, .pdf-page-content .vanguard-border-box p, #content_editor .vanguard-border-box ul, .pdf-page-content .vanguard-border-box ul, #content_editor .vanguard-border-box li, .pdf-page-content .vanguard-border-box li { color: #a20a35; }
-#content_editor .vanguard-cover-page .vanguard-cover-page--company-logo, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--company-logo { max-width: 250px; margin-top: 1em; margin-bottom: 1em; }
+.vanguard-brand-two-box { color: #fff; background-color: #9f958b; padding: 0.75em; }
+#content_editor .vanguard-brand-two-box p, .pdf-page-content .vanguard-brand-two-box p { color: #fff; margin-bottom: 0; line-height: 1; font-weight: bold; }
+.vanguard-gray-box { color: #fff; background-color: #a7a8a6; padding: 0.75em; }
+#content_editor .vanguard-gray-box p, .pdf-page-content .vanguard-gray-box p { color: #fff; margin-bottom: 0; line-height: 1; font-weight: bold; }
+.vanguard-scrolled-table { overflow-x: scroll; }
+#content_editor .vanguard-table, .pdf-page-content .vanguard-table { border: 0; background-color: transparent; }
+.vanguard-table td { font-size: 0.7em; line-height: 1.1; }
+#content_editor .vanguard-table td, .pdf-page-content .vanguard-table td { border: 0; }
+.vanguard-table td:first-child { text-align: right; }
+.vanguard-table--recordkeeping td:nth-child(2) { font-size: 1em; width: 40%; text-align: right; }
+#content_editor .vanguard-table--plan-expense thead, .pdf-page-content .vanguard-table--plan-expense thead, #content_editor .vanguard-table--plan-expense thead th, .pdf-page-content .vanguard-table--plan-expense thead th { background-color: transparent; color: #a20a35; font-weight: normal; text-decoration: underline; font-size: 0.9em; padding: 1em 0.5em 0; border: 0; }
+.vanguard-table--plan-expense th:first-child { text-align: right; }
+.vanguard-table--plan-expense td { text-align: right; }
+.vanguard-table--plan-expense td:last-child { text-align: center; }
+#content_editor .vanguard-table--plan-expense .vanguard-table--out-of-pocket, .pdf-page-content .vanguard-table--plan-expense .vanguard-table--out-of-pocket { background-color: #d8d2c5; font-weight: bold; border: 1px solid #000; }
+#content_editor .vanguard-table--plan-expense .vanguard-table--out-of-pocket:first-child, .pdf-page-content .vanguard-table--plan-expense .vanguard-table--out-of-pocket:first-child { border-right: 0; }
+#content_editor .vanguard-table--plan-expense .vanguard-table--out-of-pocket:nth-child(2), .pdf-page-content .vanguard-table--plan-expense .vanguard-table--out-of-pocket:nth-child(2) { border-left: 0; border-right: 0; }
+#content_editor .vanguard-table--plan-expense .vanguard-table--out-of-pocket:last-child, .pdf-page-content .vanguard-table--plan-expense .vanguard-table--out-of-pocket:last-child { border-left: 0; }
+#content_editor .vanguard-table--plan-expense .vanguard-table--all-in-fee, .pdf-page-content .vanguard-table--plan-expense .vanguard-table--all-in-fee { background-color: #a20a35; color: #fff; font-weight: bold; }
+#content_editor .vanguard-plan-assumptions--table, .pdf-page-content .vanguard-plan-assumptions--table { border: 0; background-color: transparent; }
+#content_editor .vanguard-plan-assumptions--table th, .pdf-page-content .vanguard-plan-assumptions--table th, #content_editor .vanguard-plan-assumptions--table td, .pdf-page-content .vanguard-plan-assumptions--table td { font-size: 0.65em; line-height: 1; border: 1px solid #ccc; padding: 0.5em; }
+#content_editor .vanguard-plan-assumptions--table th:first-child, .pdf-page-content .vanguard-plan-assumptions--table th:first-child, #content_editor .vanguard-plan-assumptions--table td:first-child, .pdf-page-content .vanguard-plan-assumptions--table td:first-child { width: 250px; }
+#content_editor .vanguard-plan-assumptions--table th:nth-child(2n), .pdf-page-content .vanguard-plan-assumptions--table th:nth-child(2n), #content_editor .vanguard-plan-assumptions--table td:nth-child(2n), .pdf-page-content .vanguard-plan-assumptions--table td:nth-child(2n) { border-left: 0; border-right: 0; }
+#content_editor .vanguard-plan-assumptions--table td, .pdf-page-content .vanguard-plan-assumptions--table td { border-top: 0; text-align: center; }
+#content_editor .vanguard-plan-assumptions--table td:first-child, #content_editor .vanguard-plan-assumptions--table td:last-child, .pdf-page-content .vanguard-plan-assumptions--table td:first-child, .pdf-page-content .vanguard-plan-assumptions--table td:last-child { text-align: left; }
+#content_editor .vanguard-plan-assumptions--table td:last-child, .pdf-page-content .vanguard-plan-assumptions--table td:last-child { border-right: 1px solid #ccc; }
+.vanguard-table--additional-pricing { margin-bottom: 1em; }
+.vanguard-table--additional-pricing .unit { padding: 0.5em !important; }
+#content_editor .vanguard-table--additional-pricing, .pdf-page-content .vanguard-table--additional-pricing { border: 0; background-color: transparent; }
+#content_editor .vanguard-table--additional-pricing p, #content_editor .vanguard-table--additional-pricing ul, #content_editor .vanguard-table--additional-pricing li, #content_editor .vanguard-table--additional-pricing div, .pdf-page-content .vanguard-table--additional-pricing p, .pdf-page-content .vanguard-table--additional-pricing ul, .pdf-page-content .vanguard-table--additional-pricing li, .pdf-page-content .vanguard-table--additional-pricing div { font-size: 0.9em; line-height: 1.3; }
+#content_editor .vanguard-table--additional-pricing td, .pdf-page-content .vanguard-table--additional-pricing td { padding: 0em; border: 0; border-top: 1px solid #ccc; }
+#content_editor .vanguard-table--additional-pricing tr:first-child td, .pdf-page-content .vanguard-table--additional-pricing tr:first-child td { border-top: 0; }
+#content_editor .vanguard-table--additional-pricing tr:last-child td, .pdf-page-content .vanguard-table--additional-pricing tr:last-child td { border-bottom: 1px solid #ccc; }
+#content_editor .vanguard-plan-assumptions-list, .pdf-page-content .vanguard-plan-assumptions-list { list-style-type: none; padding-left: 0; }
+#content_editor .vanguard-plan-assumptions--item, .pdf-page-content .vanguard-plan-assumptions--item { font-size: 0.8em; line-height: 1.1; margin-bottom: 0.25em; }
+#content_editor .vanguard-cover-page .vanguard-cover-page--company-logo, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--company-logo { max-width: 250px !important; margin-top: 1em; margin-bottom: 1em; }
 .vanguard-cover-page .vanguard-cover-page--bg-container { position: relative; }
 .vanguard-cover-page .vanguard-cover-page--content { position: absolute; left: 2em; right: 2em; bottom: 2em; }
-#content_editor .vanguard-cover-page .vanguard-cover-page--content h1, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content h1 { font-size: 3em; margin-bottom: 0.5em; }
+#content_editor .vanguard-cover-page .vanguard-cover-page--content h1, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content h1 { font-size: 3em !important; margin-bottom: 0.5em; }
 #content_editor .vanguard-cover-page .vanguard-cover-page--content p, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content p { color: #a20a35; max-width: 60%; font-size: 1.5em; line-height: 1.1; margin-bottom: 0em; }
+@page retirement-plan-challenges { margin-left: 0.25in;
+  margin-right: 0.25in; }
+.vanguard-full-page.vanguard-retirement-plan-challenges { page: retirement-plan-challenges; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 228, 230, 0)), to(rgba(225, 228, 230, 0.8))), url(https://mytinder.s3.amazonaws.com/assets/medias/595491_original.jpg?1517581239); background-image: -webkit-linear-gradient(rgba(225, 228, 230, 0), rgba(225, 228, 230, 0.8)), url(https://mytinder.s3.amazonaws.com/assets/medias/595491_original.jpg?1517581239); background-image: -o-linear-gradient(rgba(225, 228, 230, 0), rgba(225, 228, 230, 0.8)), url(https://mytinder.s3.amazonaws.com/assets/medias/595491_original.jpg?1517581239); background-image: linear-gradient(rgba(225, 228, 230, 0), rgba(225, 228, 230, 0.8)), url(https://mytinder.s3.amazonaws.com/assets/medias/595491_original.jpg?1517581239); }
 .vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 25em; }
 #content_editor .vanguard-retirement-plan-challenges .vanguard-footnote-list, .pdf-page-content .vanguard-retirement-plan-challenges .vanguard-footnote-list { padding-left: 0; width: 90%; margin: 0 auto; }
 .vanguard-plan-overview--image { display: block; margin: 0 auto; max-width: 65% !important; }
@@ -49,6 +87,23 @@ ol .vanguard-footnote--item:before { content: counter(vanguard-footnote) "."; po
 .vanguard-plan--pricing .vanguard-color-block--item:first-child:after, .vanguard-plan--pricing .vanguard-color-block--item:nth-child(2):after { content: '\2014'; }
 .vanguard-plan--pricing .vanguard-color-block--item:nth-child(3):after { content: '\002B'; left: calc(100% + 12px); }
 .vanguard-plan--pricing .vanguard-color-block--item:nth-child(4):after { content: '\003D'; left: calc(100% + 12px); }
+@page plan-assumptions { size: A4 landscape;
+  margin: 0.5in !important; }
+.vanguard-plan-assumptions { page: plan-assumptions; }
+.vanguard-plan-assumptions:after { content: ''; display: table; clear: both; }
+.vanguard-plan-assumptions .vanguard-cover-page--company-logo { max-width: 200px !important; float: right; }
+@page additional-pricing { margin-left: 0.25in;
+  margin-right: 0.25in;
+  margin-bottom: 0.25in;
+  margin-bottom: -0.5in; }
+.vanguard-additional-pricing { page: additional-pricing; }
+#content_editor .vanguard-additional-pricing h1, .pdf-page-content .vanguard-additional-pricing h1 { margin-bottom: 0.5em !important; }
+@page legal-notes { margin-left: 0.25in !important;
+  margin-right: 0.25in !important; }
+.vanguard-legal-notes { page: legal-notes; }
+#content_editor .vanguard-legal-notes p, .pdf-page-content .vanguard-legal-notes p { margin-bottom: 0.5em !important; }
+#content_editor .vanguard-legal-notes p, .pdf-page-content .vanguard-legal-notes p, #content_editor .vanguard-legal-notes li, .pdf-page-content .vanguard-legal-notes li { font-size: 0.75em; line-height: 1.3; }
+.vanguard-legal-notes .vanguard-cover-page--company-logo { max-width: 200px !important; float: right; }
 #content_editor sup, .pdf-page-content sup { font-size: 0.6em; line-height: 1; }
 #content_editor ul, .pdf-page-content ul { padding-left: 1em; font-family: Helvetica, Arial; font-size: 16px; line-height: 24px; color: #58595b; margin-bottom: 1.5em; }
 .vanguard-has-text-white { color: #fff !important; }
@@ -85,6 +140,7 @@ ol .vanguard-footnote--item:before { content: counter(vanguard-footnote) "."; po
 .vanguard-max-image { width: 100%; }
 #content_editor .vanguard-custom-chart-title, .pdf-page-content .vanguard-custom-chart-title { margin-left: 8em; }
 @media screen and (max-width: 735px) { .vanguard-full-page--content { padding: 1em; } .vanguard-stat--metric-container, .vanguard-stat--content { display: block; } .vanguard-color-block--item { min-height: auto; border-right: 0; border-bottom: 10px solid #fff; } .vanguard-color-block--item:last-child { border-bottom: 0; } .vanguard-headline-container { width: 100%; } .vanguard-headline-container h2, .vanguard-headline-container img { display: block; } .vanguard-headline-container img { margin-left: auto; margin-right: auto; margin-bottom: 1em; } .vanguard-cover-page .vanguard-cover-page--content { left: 1.5em; right: 1.5em; bottom: 1.5em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content h1, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content h1 { font-size: 2.25em; } #content_editor .vanguard-cover-page .vanguard-cover-page--content p, .pdf-page-content .vanguard-cover-page .vanguard-cover-page--content p { max-width: none; font-size: 1em; } .vanguard-full-page.vanguard-retirement-plan-challenges { background-position: top center; } .vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 0; } .vanguard-plan-overview--image { max-width: 100% !important; } .vanguard-plan--partcipant .unit.half:first-child { padding-right: 0 !important; margin-bottom: 2em; } .vanguard-plan--partcipant .unit.half:last-child { margin-top: 0; padding-left: 0 !important; } .vanguard-plan--pricing .vanguard-color-block--item { border-right-width: 0; margin-bottom: 2em; } .vanguard-plan--pricing .vanguard-color-block--item:after { position: absolute; top: calc(100% + 0.1em); left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } .vanguard-plan--pricing .vanguard-color-block--item:nth-child(3):after { left: 50%; } .vanguard-plan--pricing .vanguard-color-block--item:nth-child(4):after { left: 50%; } #content_editor .vanguard-custom-chart-title, .pdf-page-content .vanguard-custom-chart-title { margin-left: 0; } }
+@media print { #content_editor .vanguard-plan-assumptions--table th, .pdf-page-content .vanguard-plan-assumptions--table th, #content_editor .vanguard-plan-assumptions--table td, .pdf-page-content .vanguard-plan-assumptions--table td { font-size: 0.55em; } #content_editor .vanguard-table--additional-pricing p, #content_editor .vanguard-table--additional-pricing ul, #content_editor .vanguard-table--additional-pricing li, #content_editor .vanguard-table--additional-pricing div, .pdf-page-content .vanguard-table--additional-pricing p, .pdf-page-content .vanguard-table--additional-pricing ul, .pdf-page-content .vanguard-table--additional-pricing li, .pdf-page-content .vanguard-table--additional-pricing div { font-size: 1em; } #content_editor .vanguard-plan-assumptions--item, .pdf-page-content .vanguard-plan-assumptions--item { font-size: 0.7em; } .vanguard-full-page.vanguard-retirement-plan-challenges { background-image: url(https://mytinder.s3.amazonaws.com/assets/medias/595491_original.jpg?1517581239); } .vanguard-retirement-plan-challenges .vanguard-stat-list { margin-bottom: 13em; } #content_editor .vanguard-legal-notes p, .pdf-page-content .vanguard-legal-notes p, #content_editor .vanguard-legal-notes li, .pdf-page-content .vanguard-legal-notes li { font-size: 0.65em; } }
 @media screen and (max-width: 568px) { .vanguard-mar-x { margin-left: 0px !important; margin-right: 0px !important; } }
 
 /*# sourceMappingURL=client-theme.css.map */

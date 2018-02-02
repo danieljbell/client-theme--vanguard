@@ -1,0 +1,33 @@
+@page legal-notes {
+  margin-left: 0.25in !important;
+  margin-right: 0.25in !important;
+}
+
+.vanguard-legal-notes {
+  page: legal-notes;
+
+  p {
+    #content_editor &,
+    .pdf-page-content & {
+      margin-bottom: 0.5em !important;
+    }
+  }
+
+  p,
+  li {
+    #content_editor &,
+    .pdf-page-content & {
+      font-size: 0.75em;
+      line-height: 1.3;
+      @include print {
+        font-size: 0.65em;
+      }
+    }
+  }
+
+}
+
+.vanguard-legal-notes .vanguard-cover-page--company-logo {
+  max-width: 200px !important;
+  float: right;
+}
